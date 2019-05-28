@@ -1,0 +1,81 @@
+.carsousel-container{
+    display: block;
+    position: relative;
+    margin: 0px auto;
+}
+
+.carsousel-container .carousel{
+  margin: 0px auto;
+  position: relative;
+  width: 80%;
+  height: 300px;
+  padding: 5px;
+}
+
+.carsousel-container .carousel .carousel__buttom{
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  justify-content: center;
+  border:none;
+  font-size: 36px;
+}
+
+.carsousel-container .carousel .carousel__item-wrapper{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.carsousel-container .carousel .carousel__item-wrapper ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  position: relative;
+  transition: transform 250ms ease-in;
+}
+.carsousel-container .carousel .carousel__item-wrapper ul .carousel__item{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.carsousel-container .carousel .carousel__item-wrapper ul .carousel__item a{
+    display: inline-block;
+      height: 100%;
+      position: relative;
+}
+.carsousel-container .carousel .carousel__item-wrapper ul .carousel__item a img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.carsousel-container .carousel .carousel__item-wrapper ul .carousel__item a>p{
+  position: absolute;
+  bottom: 6%;
+  left: 3%;
+  top: 65%;
+  text-align: center;
+  justify-content: center;
+  background: rgba(210, 210, 210, 0.73);
+  margin: 0;
+  min-width: 210px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #111;
+  font-weight: 600;
+  text-shadow: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  box-shadow: 2px 1px 2px #00000057;
+}
+
+.carousel__buttom--right{
+  right: -40px;
+}
+.carousel__buttom--left{
+  left: -40px;
+}
